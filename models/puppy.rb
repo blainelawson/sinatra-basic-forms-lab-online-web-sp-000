@@ -1,5 +1,6 @@
 class Puppy
-  attr_reader :name, :breed, :months_old
+  attr_accessor :months_old
+  attr_reader :name, :breed
 
   def initialize(name:, breed:, months_old:)
     # binding.pry
@@ -7,4 +8,6 @@ class Puppy
     @breed = breed
     @months_old = months_old
   end
+
+  
 end
