@@ -7,7 +7,7 @@ class App < Sinatra::Base
     @breed = params[:breed]
     @months_old = params[:months_old]
 binding.pry
-    @puppy = Puppy.new(name: @name, breed: @breed, age: @age)
+    @puppy = Puppy.new(name: @name, breed: @breed, age: @months_old)
 
     erb :display_puppy
   end
