@@ -1,7 +1,7 @@
 class Puppy
-  attr_reader :name, :breed, :age
+  attr_reader :name, :breed, :months_old
 
-  def initialize(name: nil, breed: nil, months_old: nil)
+  def initialize(name:, breed:, months_old: nil)
     binding.pry
     @name = name
     @breed = breed
